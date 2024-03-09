@@ -69,8 +69,12 @@ if __name__ == "__main__":
         mlflow.log_metric("r2", r2)
         mlflow.log_metric("mae", mae)
 
-        predictions = lr.predict(train_x)
-        signature = infer_signature(train_x, predictions)
+        # predictions = lr.predict(train_x)
+        # signature = infer_signature(train_x, predictions)
+
+        # dagshub remote server only
+        remote_server_uri = "https://dagshub.com/Muhliscm/mlflow_basics.mlflow"
+        mlflow.set_tracking_uri(remote_server_uri)
 
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
 
@@ -84,7 +88,6 @@ if __name__ == "__main__":
                 lr,
                 "model",
                 registered_model_name="ElasticnetWineModel",
-                signature=signature,
             )
         else:
-            mlflow.sklearn.log_model(lr, "model", signature=signature)
+            mlflow.sklearn.log_model(lr, "model")
