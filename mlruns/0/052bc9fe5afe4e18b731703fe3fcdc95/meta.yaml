@@ -1,0 +1,15 @@
+artifact_uri: file:///home/muhliscm/Desktop/data_engineering/data%20science/Ds_practice/MLOps/chest_ct_scan_cnn/mlflow_test/mlruns/0/052bc9fe5afe4e18b731703fe3fcdc95/artifacts
+end_time: 1709980003639
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 052bc9fe5afe4e18b731703fe3fcdc95
+run_name: righteous-pig-407
+run_uuid: 052bc9fe5afe4e18b731703fe3fcdc95
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1709980001605
+status: 3
+tags: []
+user_id: muhliscm
