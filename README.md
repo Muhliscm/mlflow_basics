@@ -2,15 +2,15 @@
 
 ## For Dags Hub
 
-MLFLOW_TRACKING_URI=https://dagshub.com/Muhliscm/mlflow_basics.mlflow \
-MLFLOW_TRACKING_USERNAME=Muhliscm \
-MLFLOW_TRACKING_PASSWORD=5185caac4e8d42302baae08dad8a03166cc1355e \
+MLFLOW_TRACKING_URI=dagshublink \
+MLFLOW_TRACKING_USERNAME=username \
+MLFLOW_TRACKING_PASSWORD=password \
 python script.py
 
 ```bash
-export MLFLOW_TRACKING_URI=https://dagshub.com/Muhliscm/mlflow_basics.mlflow \
-export MLFLOW_TRACKING_USERNAME=Muhliscm \
-export MLFLOW_TRACKING_PASSWORD=5185caac4e8d42302baae08dad8a03166cc1355e \
+export MLFLOW_TRACKING_URI={your dagshub link} \
+export MLFLOW_TRACKING_USERNAME={username} \
+export MLFLOW_TRACKING_PASSWORD={password} \
 ```
 
 ## ML Flow AWS
